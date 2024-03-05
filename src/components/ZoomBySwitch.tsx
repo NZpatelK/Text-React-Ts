@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import {ZoomData} from '../Data/ZoomData';
+import { ZoomData } from '../Data/ZoomData';
 import '../style/ZoomBySwitch.css';
 
-const ZoomBySwitch: React.FC  = () => {
+const ZoomBySwitch: React.FC = () => {
     const [index, setIndex] = useState(0);
     const [content, setContent] = useState(ZoomData);
-    const [initialTouchY, setInitialTouchY] = useState<number>(0);
+    // const [initialTouchY, setInitialTouchY] = useState<number>(0);
     const [isButtonDisabled, setIsButtonDisabled] = React.useState(false);
 
     // ---------------------------------------------------------------------------------------------------//
@@ -101,17 +101,19 @@ const ZoomBySwitch: React.FC  = () => {
 
     return (
         // <div className='container' onWheel={(e) => !isButtonDisabled ? handleOnWheel(e) : null} onTouchMove={(e) => !isButtonDisabled ? handleTouchScroll(e) : null}>
-        <div className='container'>
-        {content.map((data, index) => {
-
-                return (<h1 key={index} className={'centered ' + data.TransitionStatus} onTransitionEnd={() => setIsButtonDisabled(false)}> {data.label} </h1>);
-
-            })}
-            <div className="switchButton">
-                <div className="leftButton" onClick={() => !isButtonDisabled ? handleSwitch('left') : null}>Left</div>
-                <div className="rightButton" onClick={() => !isButtonDisabled ? handleSwitch('right') : null}>Right</div>
+       <div className='textbox'>
+            <div className='container'>
+                {content.map((data, index) => {
+    
+                    return (<h1 key={index} className={'centered ' + data.TransitionStatus} onTransitionEnd={() => setIsButtonDisabled(false)}> {data.label} </h1>);
+    
+                })}
+                <div className="switchButton">
+                    <div className="leftButton" onClick={() => !isButtonDisabled ? handleSwitch('left') : null}>Left</div>
+                    <div className="rightButton" onClick={() => !isButtonDisabled ? handleSwitch('right') : null}>Right</div>
+                </div>
             </div>
-        </div>);
+       </div>);
 };
 
 export default ZoomBySwitch;
