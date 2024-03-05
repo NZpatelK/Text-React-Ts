@@ -1,5 +1,4 @@
 import React from 'react';
-import ZoomBySwitch from '../components/ZoomBySwitch';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
