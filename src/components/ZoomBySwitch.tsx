@@ -49,49 +49,30 @@ const ZoomBySwitch: React.FC = () => {
             setIndex(index - 1);
 
             const updatedContent = content.map((data) => {
-
                 if (data.id === index) {
-
                     data.TransitionStatus = 'leftTextExit';
-
                 }
 
                 if (data.id === index - 1) {
-
                     data.TransitionStatus = 'textEnter';
-
                 }
-
                 return data;
             });
-
-
             setContent(updatedContent);
 
         } else {
-
             setIndex(index + 1);
-
             const updatedContent = content.map((data) => {
-
                 if (data.id === index) {
-
                     data.TransitionStatus = 'rightTextExit';
-
                 }
 
                 if (data.id === index + 1) {
-
                     data.TransitionStatus = 'textEnter';
-
                 }
-
                 return data;
             });
-
-
             setContent(updatedContent);
-
         }
 
         setIsButtonDisabled(true);
