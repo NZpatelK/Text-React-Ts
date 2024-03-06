@@ -1,17 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { ZoomData } from '../Data/ZoomData';
 import backButton from '../assets/turn-back.png';
 import '../style/ZoomBySwitch.css';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const ZoomBySwitch: React.FC = () => {
-    const [index, setIndex] = useState(0);
     const [content, setContent] = useState(ZoomData);
     const [isButtonDisabled, setIsButtonDisabled] = useState(false);
-
-    useEffect(() => {
-        setContent(ZoomData);
-    }, [])
+    const [index, setIndex] = useState(content.filter((data) => data.TransitionStatus === "textEnter")[0].id);
+    const navigate = useNavigate();
 
     // This function is used to handle the switch button click event.
     // The direction parameter is used to determine the direction of the switch.
@@ -55,7 +52,7 @@ const ZoomBySwitch: React.FC = () => {
     return (
         // <div className='container' onWheel={(e) => !isButtonDisabled ? handleOnWheel(e) : null} onTouchMove={(e) => !isButtonDisabled ? handleTouchScroll(e) : null}>
         <div className='container'>
-            <div><Link to='/Text-React-Ts/'> <img className='backBtn' src={backButton} alt="" /> </Link></div>
+            <div onClick={() => navigate(-1)}><img className='backBtn' src={backButton} alt="" /></div>
             {content.map((data, index) => {
                 return (<h1 key={index} className={'centered ' + data.TransitionStatus} onTransitionEnd={() => setIsButtonDisabled(false)}> {data.label} </h1>);
             })}

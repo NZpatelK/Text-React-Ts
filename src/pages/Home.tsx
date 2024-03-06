@@ -10,7 +10,7 @@ const Home = () => {
             <br />
             <Link to="/Text-React-Ts/ZoomBySwitch2">Go to Zoom by switch by using scroll</Link>
             <br />
-            <Link to="LetterRotating">Go to Zoom by switch by using scroll</Link>
+            <Link to="LetterRotating">Go to Letter Rotating</Link>
         </div>
     );
 };
