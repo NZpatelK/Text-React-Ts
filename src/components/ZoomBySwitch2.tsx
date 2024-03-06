@@ -7,7 +7,41 @@ import { Link } from 'react-router-dom';
 const ZoomBySwitch: React.FC = () => {
     const [index, setIndex] = useState(0);
     const [content, setContent] = useState(ZoomData);
+    const [initialTouchY, setInitialTouchY] = useState<number>(0);
     const [isButtonDisabled, setIsButtonDisabled] = React.useState(false);
+
+    // ---------------------------------------------------------------------------------------------------//
+
+    // This function is used to handle the mouse wheel event.
+    const handleOnWheel = (e: React.WheelEvent<HTMLDivElement>) => {
+        e.preventDefault();
+
+        if (e.deltaY < 0) {
+            handleSwitch('left');
+        }
+        else if (e.deltaY > 0) {
+            handleSwitch('right');
+
+        }
+    }
+
+    // ---------------------------------------------------------------------------------------------------//
+
+    // This function is used to handle the touch scroll event.
+    const handleTouchScroll = (e: React.TouchEvent<HTMLDivElement>) => {
+        e.preventDefault();
+        const deltaY = e.touches[0].clientY - initialTouchY;
+        setInitialTouchY(e.touches[0].clientY);
+
+        if (deltaY < 0) {
+            handleSwitch('left');
+        }
+        else if (deltaY > 0) {
+            handleSwitch('right');
+        }
+    }
+
+    // ---------------------------------------------------------------------------------------------------//
 
     // This function is used to handle the switch button click event.
     // The direction parameter is used to determine the direction of the switch.
@@ -49,17 +83,15 @@ const ZoomBySwitch: React.FC = () => {
     // ---------------------------------------------------------------------------------------------------//
 
     return (
-        // <div className='container' onWheel={(e) => !isButtonDisabled ? handleOnWheel(e) : null} onTouchMove={(e) => !isButtonDisabled ? handleTouchScroll(e) : null}>
-        <div className='container'>
+        <div className='container' onWheel={(e) => !isButtonDisabled ? handleOnWheel(e) : null} onTouchMove={(e) => !isButtonDisabled ? handleTouchScroll(e) : null}>
+            
             <div><Link to='/Text-React-Ts/'> <img className='backBtn' src={backButton} alt="" /> </Link></div>
+
             {content.map((data, index) => {
                 return (<h1 key={index} className={'centered ' + data.TransitionStatus} onTransitionEnd={() => setIsButtonDisabled(false)}> {data.label} </h1>);
             })}
 
-            <div className="switchButton">
-                <div className="leftButton" onClick={() => !isButtonDisabled ? handleSwitch('left') : null}>Left</div>
-                <div className="rightButton" onClick={() => !isButtonDisabled ? handleSwitch('right') : null}>Right</div>
-            </div>
+            <h3 className='message'>Scroll or Swipe down</h3>
         </div>
     );
 };

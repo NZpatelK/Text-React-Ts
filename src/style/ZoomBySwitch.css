@@ -9,6 +9,16 @@
     width: 100vw;
     overflow: hidden;
   }
+
+  .backBtn{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 9999;
+  }
   
   .centered {
     position: absolute;
@@ -69,5 +79,14 @@
   
   .rightButton {
     margin-left: 100px; 
+  }
+
+  .message{
+    position: absolute;
+    display: flex;
+    bottom: 50px;
+    font-size: 24px;
+    align-items: center;
+    z-index: 9999;
   }
   
