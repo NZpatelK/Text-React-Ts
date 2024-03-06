@@ -9,6 +9,8 @@ const Home = () => {
             <Link to="/Text-React-Ts/ZoomBySwitch">Go to Zoom by switch using button click</Link>   
             <br />
             <Link to="/Text-React-Ts/ZoomBySwitch2">Go to Zoom by switch by using scroll</Link>
+            <br />
+            <Link to="LetterRotating">Go to Zoom by switch by using scroll</Link>
         </div>
     );
 };

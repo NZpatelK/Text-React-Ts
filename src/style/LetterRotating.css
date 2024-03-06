@@ -1,0 +1,73 @@
+.backBtn{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 9999;
+  }
+
+.role-rotating-text {
+    font-weight: 600;
+    font-size: 36px;
+    width: 500px;
+    padding-left: 20px ;
+    border-radius: 20px;
+    background: #fff;
+    color: #000;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+}
+
+.role-rotating-text .role-name {
+    display: inline-flex;
+    margin: 0;
+    vertical-align: top;
+}
+
+.role-rotating-text .role-name .word {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+}
+
+.role-rotating-text .role-name .word .letter {
+    transform-origin: center center 25px;
+}
+
+.role-rotating-text .role-name .word .letter.out {
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+
+.role-rotating-text .role-name .word .letter.in {
+    transition: 0.38s ease;
+}
+
+.role-rotating-text .role-name .word .letter.behind {
+    transform: rotateX(-90deg);
+}
+
+.w-1 {
+    color: #00ff0d;
+}
+
+.w-2 {
+    color: #04c5ff;
+}
+
+.w-3 {
+    color: #3498db;
+}
+
+.w-4 {
+    color: #2ecc71;
+}
+
+.w-5 {
+    color: #0f1ef1;
+}
+
+.space {
+    margin-left: 10px !important;
+}

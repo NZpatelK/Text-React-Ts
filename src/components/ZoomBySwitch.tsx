@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ZoomData } from '../Data/ZoomData';
 import backButton from '../assets/turn-back.png';
 import '../style/ZoomBySwitch.css';
@@ -7,7 +7,11 @@ import { Link } from 'react-router-dom';
 const ZoomBySwitch: React.FC = () => {
     const [index, setIndex] = useState(0);
     const [content, setContent] = useState(ZoomData);
-    const [isButtonDisabled, setIsButtonDisabled] = React.useState(false);
+    const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+
+    useEffect(() => {
+        setContent(ZoomData);
+    }, [])
 
     // This function is used to handle the switch button click event.
     // The direction parameter is used to determine the direction of the switch.

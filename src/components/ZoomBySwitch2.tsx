@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { ZoomData } from '../Data/ZoomData';
+import { ZoomData2 } from '../Data/ZoomData';
 import backButton from '../assets/turn-back.png';
 import '../style/ZoomBySwitch.css';
 import { Link } from 'react-router-dom';
 
-const ZoomBySwitch: React.FC = () => {
+const ZoomBySwitch2: React.FC = () => {
     const [index, setIndex] = useState(0);
-    const [content, setContent] = useState(ZoomData);
+    const [content, setContent] = useState(ZoomData2);
     const [initialTouchY, setInitialTouchY] = useState<number>(0);
     const [isButtonDisabled, setIsButtonDisabled] = React.useState(false);
 
@@ -96,4 +96,4 @@ const ZoomBySwitch: React.FC = () => {
     );
 };
 
-export default ZoomBySwitch;
+export default ZoomBySwitch2;
