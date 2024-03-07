@@ -30,7 +30,7 @@ interface MessageProp {
   text: string;
 }
 
-function MainTextZoomIn() {
+const MainTextZoomIn: React.FC = () => {
   const [words, setWords] = useState<getWord[]>([]);
   const [backIndex, setBackIndex] = useState(1);
   const [frontIndex, setFrontIndex] = useState(0);
