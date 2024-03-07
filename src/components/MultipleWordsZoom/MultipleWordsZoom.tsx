@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { addNewWord, backChange, frontChange, initalWords, positionChange } from "./Utils/WordAminationsController";
+import backButton from '../../assets/turn-back.png';
+import { useNavigate } from 'react-router-dom';
 import "./ZoomingWords.css";
 
 interface Word {
@@ -17,6 +19,7 @@ const MultipleWordsZoom: React.FC = () => {
   const [back, setBack] = useState<number>(4);
   const [total, setTotal] = useState<number>(0);
   const [initialTouchY, setInitiaTouchY] = useState<number>(0);
+  const navigate = useNavigate();
 
 
 
@@ -126,6 +129,7 @@ const MultipleWordsZoom: React.FC = () => {
 
   return (
     <div className="word-container" onWheel={handleWheelScroll} onTouchMove={handleTouchScroll}>
+        <div onClick={() => navigate(-1)}><img className='backBtn' src={backButton} alt="" /></div>
       {words.map((word, index) => (
         <div
           key={index}

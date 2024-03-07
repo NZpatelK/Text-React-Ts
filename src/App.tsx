@@ -5,6 +5,7 @@ import ZoomBySwitch from './components/ZoomBySwitch/ZoomBySwitch';
 import ZoomBySwitch2 from './components/ZoomBySwitch/ZoomBySwitch2';
 import LetterRotating from './components/LetterRotating/LettersRotating';
 import MutlipleWordsZoom from './components/MultipleWordsZoom/MultipleWordsZoom';
+import SlidesZoom from './components/SlidesZoom/SlidesZoom';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Route path="Text-React-Ts/ZoomBySwitch2" element={<ZoomBySwitch2 />} />
       <Route path="Text-React-Ts/LetterRotating" element={<LetterRotating />} />
       <Route path="Text-React-Ts/MultipleWordsZoom" element={<MutlipleWordsZoom />} />
+      <Route path='Text-React-Ts/SlidesZoom' element={<SlidesZoom/>} />
       <Route path='*' element={<h1>Not Found</h1>} />
     </Routes>
   </div>

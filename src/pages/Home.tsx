@@ -13,6 +13,8 @@ const Home = () => {
             <Link to="LetterRotating">Go to Letter Rotating</Link>
             <br />
             <Link to="MultipleWordsZoom">Go to Mutliple words zoom</Link>
+            <br />
+            <Link to="SlidesZoom">Go to Mutliple words zoom</Link>
         </div>
     );
 };
