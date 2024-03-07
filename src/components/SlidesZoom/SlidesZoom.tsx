@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './SlidesZoom.css';
 import { backChange, frontChange, getInitialWords } from './Utils/SlideController';
+import backButton from '../../assets/turn-back.png';
+import { Link } from 'react-router-dom';
 
 interface getWord {
   index: number;
@@ -183,7 +185,7 @@ useEffect(() => {
 
   return (
     <div className="workspace" ref={zoomElementRef} onWheel={handleWheel}>
-
+      <div><Link to='/Text-React-Ts/'> <img className='backBtn' src={backButton} alt="" /> </Link></div>
       {words.map((word, index) => (
         getHtmlStatment(word, index)
       ))}

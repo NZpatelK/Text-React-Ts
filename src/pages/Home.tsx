@@ -18,7 +18,7 @@ const Home: React.FC = () => {
                     <Link to="ZoomBySwitch" className='Link'>Click Here</Link>
                 </div>
                 <div className='LinkItem' onClick={() => navigate("ZoomBySwitch2")}>
-                    <h2>Zoom by Switch</h2>
+                    <h2>Zoom by Scroll</h2>
                     <p>To zoom in and out, simply scroll up and down. Scrolling down takes you to the next, while scrolling up moves you back.</p>
                     <Link className='Link' to="ZoomBySwitch2">Click Here</Link>
                 </div>
