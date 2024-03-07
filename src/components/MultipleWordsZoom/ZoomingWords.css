@@ -1,4 +1,4 @@
-.word-container {
+.zoom-word-container {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -6,7 +6,7 @@
     
   }
   
-  .word {
+  .zoom-word {
     position: absolute;
     font-size: 6px;
     font-weight: 900;

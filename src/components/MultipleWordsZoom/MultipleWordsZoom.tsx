@@ -128,12 +128,12 @@ const MultipleWordsZoom: React.FC = () => {
   };
 
   return (
-    <div className="word-container" onWheel={handleWheelScroll} onTouchMove={handleTouchScroll}>
+    <div className="zoom-word-container" onWheel={handleWheelScroll} onTouchMove={handleTouchScroll}>
         <div onClick={() => navigate(-1)}><img className='backBtn' src={backButton} alt="" /></div>
       {words.map((word, index) => (
         <div
           key={index}
-          className="word"
+          className="zoom-word"
           style={{ top: word.top, left: word.left, transform: `scale(${word.scale})`, opacity: word.opacity, filter: `blur(${word.blur}px)` }}
         >
           {word.text}
