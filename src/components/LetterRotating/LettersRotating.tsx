@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import '../style/LetterRotating.css';
-import backButton from '../assets/turn-back.png';
+import './LetterRotating.css';
+import backButton from '../../assets/turn-back.png';
 import { Link } from "react-router-dom";
 
 const LetterRotating: React.FC = () => {

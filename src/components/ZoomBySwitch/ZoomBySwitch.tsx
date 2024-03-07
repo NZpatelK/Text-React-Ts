@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { ZoomData } from '../Data/ZoomData';
-import backButton from '../assets/turn-back.png';
-import '../style/ZoomBySwitch.css';
+import { ZoomData } from './Data/ZoomData';
+import backButton from '../../assets/turn-back.png';
+import './ZoomBySwitch.css';
 import { useNavigate } from 'react-router-dom';
 
 const ZoomBySwitch: React.FC = () => {
