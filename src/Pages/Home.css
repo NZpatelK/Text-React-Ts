@@ -1,0 +1,69 @@
+.homepage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.LinkContainer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+
+
+}
+
+.LinkItem{ 
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items:start;
+    flex-direction: column;
+    margin: 10px;
+    /* padding: 10px; */
+    width: 400px;
+    height: 200px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.LinkItem h2{ 
+    margin: 10px 10px 5px 10px;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.LinkItem p{ 
+    margin: 0 10px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #000;
+}
+
+.LinkItem .Link{
+    margin: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.LinkItem:hover{ 
+    background-color: #f2f2f2;
+    transition: 0.3s;
+}
+
+
+@media screen and (max-width: 950px){
+    .LinkContainer{
+        justify-content: center;
+    }
+}
