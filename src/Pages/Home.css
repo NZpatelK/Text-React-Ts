@@ -24,9 +24,8 @@
     align-items:start;
     flex-direction: column;
     margin: 10px;
-    width: 400px;
-    height: 200px;
-    border: 1px solid #000;
+    width: 300px;
+    height: 250px;
     border-radius: 5px;
     text-decoration: none;
     background-color: #ffffff;
@@ -50,14 +49,14 @@
 }
 
 .LinkItem .Link{
-    margin: 10px;
+    margin: 15px 20px;
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
 .LinkItem:hover{ 
-    background-color: #f2f2f2;
+    transform: scale(1.05);
     transition: 0.3s;
 }
 
