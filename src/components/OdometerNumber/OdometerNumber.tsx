@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Odometer from 'react-odometerjs';
 
 export const OdometerNumber = () => {
-    const [value, setValue] = useState(1234);
+    const [value, setValue] = useState(111);
 
     useEffect(() => {
         const timeoutId = setTimeout(() => setValue(4321), 2000);
@@ -11,5 +11,5 @@ export const OdometerNumber = () => {
         };
     }, []);
 
-    return <Odometer value={value} format="(.ddd),dd" />;
+    return <Odometer value={value} format="d" style={{fontSize: "10em"}} />;
 }
