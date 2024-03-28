@@ -11,5 +11,5 @@ export const OdometerNumber = () => {
         };
     }, []);
 
-    return <Odometer value={value} format="d" style={{fontSize: "10em"}} />;
+    return <Odometer value={value} format="d" style={{fontSize: "10em"}} theme="car" />;
 }
