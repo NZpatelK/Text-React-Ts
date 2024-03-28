@@ -1,12 +1,9 @@
-import React from 'react'
 
-export const OdometerNumber: React.FC = () => {
+export const OdometerNumber = () => {
 
 
-    return (
-        <div>
-            
 
-        </div>
-    )
+    return <div className="odometer">
+
+    </div>
 }
