@@ -6,7 +6,8 @@ export const OdometerNumber = () => {
     const [theme, setTheme] = useState(0);
     const [isDisplay, setIsDisplay] = useState(false);
 
-    const listTheme = ["default",  "car", "plaza", "slot-machine", "digital", "train-station"];
+    const listTheme = ["default", "car", "plaza", "slot-machine", "digital", "train-station"];
+
 
     const changeTheme = (index: number) => {
         setTheme(index);
@@ -21,12 +22,17 @@ export const OdometerNumber = () => {
             clearTimeout(timeoutId);
         };
     }, []);
-    
+
     // return(<> <Odometer value={value} format="d" style={{ fontSize: "10em" }} theme={theme}/></>)
 
     return (
         <>
-            <Odometer value={value} format="d" style={isDisplay ? {fontSize: "10em", cursor: 'pointer' } : {display: "none"}} theme={listTheme[theme]}  />
+         <Odometer value={value} format="d" style={isDisplay ? { fontSize: "10em", cursor: 'pointer' } : { display: "none" }} theme={listTheme[0]} />
+        <Odometer value={value} format="d" style={isDisplay ? { fontSize: "10em", cursor: 'pointer' } : { display: "none" }} theme={listTheme[1]} />
+        <Odometer value={value} format="d" style={isDisplay ? { fontSize: "10em", cursor: 'pointer' } : { display: "none" }} theme={listTheme[2]} />
+        <Odometer value={value} format="d" style={isDisplay ? { fontSize: "10em", cursor: 'pointer' } : { display: "none" }} theme={listTheme[3]} />
+        <Odometer value={value} format="d" style={isDisplay ? { fontSize: "10em", cursor: 'pointer' } : { display: "none" }} theme={listTheme[4]} />
+        <Odometer value={value} format="d" style={isDisplay ? { fontSize: "10em", cursor: 'pointer' } : { display: "none" }} theme={listTheme[5]} />
             <div className="theme-option">
                 {listTheme.map((theme, index) => (
                     <button key={index} onClick={() => changeTheme(index)}>{theme}</button>
