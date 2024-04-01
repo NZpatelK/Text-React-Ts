@@ -1,4 +1,4 @@
-.container {
+.switchContainer {
     position: absolute;
     display: flex;
     position: relative;
@@ -45,7 +45,6 @@
     transform: scale(0);
     opacity: 0;
     filter: blur(5px);
-    
   }
   
   .switchButton {

@@ -1,5 +1,13 @@
 import { useState, useEffect } from "react";
 import Odometer from 'react-odometerjs';
+import './odometer-theme-car.css';
+import './odometer-theme-plaza.css';
+import './odometer-theme-slot-machine.css';
+import './odometer-theme-digital.css';
+import './odometer-theme-train-station.css';
+import './odometer-theme-default.css';
+import './OdometerNumber.css';
+
 
 export const OdometerNumber = () => {
     const [values, setValues] = useState<number[]>([]);
@@ -21,14 +29,14 @@ export const OdometerNumber = () => {
     }
 
     return (
-        <p>
+        <div className="odometerContainer">
             {listTheme.map((_, index) => (
-                <>
+                <div className="themeOption">
                     <Odometer value={values[index]} format="d" style={{ fontSize: "10em", cursor: 'pointer' }} theme={listTheme[index]} />
-                </>
+                </div>
                 // <input type="number" onChange={(e) => updateValue(index,parseInt(e.target.value))} />
 
             ))}
-        </p>
+        </div>
     );
 }

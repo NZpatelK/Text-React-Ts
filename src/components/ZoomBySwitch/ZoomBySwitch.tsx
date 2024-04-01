@@ -51,7 +51,7 @@ const ZoomBySwitch: React.FC = () => {
 
     return (
         // <div className='container' onWheel={(e) => !isButtonDisabled ? handleOnWheel(e) : null} onTouchMove={(e) => !isButtonDisabled ? handleTouchScroll(e) : null}>
-        <div className='container'>
+        <div className='switchContainer'>
             <div onClick={() => navigate(-1)}><img className='backBtn' src={backButton} alt="" /></div>
             {content.map((data, index) => {
                 return (<h1 key={index} className={'centered ' + data.TransitionStatus} onTransitionEnd={() => setIsButtonDisabled(false)}> {data.label} </h1>);
