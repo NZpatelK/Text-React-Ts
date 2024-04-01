@@ -33,7 +33,10 @@ export const OdometerNumber = () => {
             {listTheme.map((_, index) => (
                 <div className="themeOption">
                     <Odometer value={values[index]} format="d" style={{ fontSize: "10em", cursor: 'pointer' }} theme={listTheme[index]} />
-                    <div className="Input"><input className="num-input" type="number" onChange={(e) => updateValue(index,parseInt(e.target.value))} /></div>
+                    <div className="inputContainer" >
+                        <h3>Input your new value to update Odometer</h3>
+                        <input className="num-input" type="number" onChange={(e) => updateValue(index, parseInt(e.target.value))} />
+                    </div>
                 </div>
 
             ))}
