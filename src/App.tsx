@@ -7,6 +7,7 @@ import LetterRotating from './components/LetterRotating/LettersRotating';
 import MutlipleWordsZoom from './components/MultipleWordsZoom/MultipleWordsZoom';
 import SlidesZoom from './components/SlidesZoom/SlidesZoom';
 import { OdometerNumber } from './components/OdometerNumber/OdometerNumber';
+import { TextSvgAnimation } from './components/TextSvgAnimation/TextSvgAnimation';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <div className="container">
     {/* Defining routes path and rendering components as element */}
     <Routes>
+      <Route path='/' element={<Home />} />
       <Route path="Text-React-Ts/" element={<Home />} />
       <Route path="Text-React-Ts/ZoomBySwitch" element={<ZoomBySwitch />} />
       <Route path="Text-React-Ts/ZoomBySwitch2" element={<ZoomBySwitch2 />} />
@@ -21,6 +23,8 @@ function App() {
       <Route path="Text-React-Ts/MultipleWordsZoom" element={<MutlipleWordsZoom />} />
       <Route path='Text-React-Ts/SlidesZoom' element={<SlidesZoom/>} />
       <Route path='Text-React-Ts/OdometerNum' element={<OdometerNumber/>} />
+      <Route path='Text-React-Ts/TextSvgAnimation' element={<TextSvgAnimation/>} />
+
       <Route path='*' element={<h1>Not Found</h1>} />
     </Routes>
   </div>
