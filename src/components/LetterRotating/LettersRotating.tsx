@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import './LetterRotating.css';
 import backButton from '../../assets/turn-back.png';
 import { Link } from "react-router-dom";
+import A from '../../assets/alphabet/A.svg';
 
 const LetterRotating: React.FC = () => {
 
@@ -67,6 +68,8 @@ const LetterRotating: React.FC = () => {
           <span className="word w-5">Networker</span>
         </h3>
       </div>
+
+      <img src={A} alt="My SVG" />
     </div>
   );
 };
