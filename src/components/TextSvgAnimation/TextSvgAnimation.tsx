@@ -1,5 +1,5 @@
 import React from 'react'
-// import A from '../../assets/alphabet/A.svg';
+import A from '../../assets/alphabet/A.svg';
 // import B from '../../assets/alphabet/B.svg';
 // import C from '../../assets/alphabet/C.svg';
 // import D from '../../assets/alphabet/D.svg';
@@ -13,9 +13,10 @@ import React from 'react'
 // import L from '../../assets/alphabet/L.svg';
 // import M from '../../assets/alphabet/M.svg';
 // import N from '../../assets/alphabet/N.svg';
-import O from '../../assets/alphabet/O.svg';
+// import O from '../../assets/alphabet/O.svg';
+import P from '../../assets/alphabet/P.svg';
 
-import letters from '../../assets/alphabet/1letters.svg';
+// import letters from '../../assets/alphabet/1letters.svg';
 
 export const TextSvgAnimation = () => {
   return (
@@ -34,7 +35,8 @@ export const TextSvgAnimation = () => {
         {/* <img src={L} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
         {/* <img src={M} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
         {/* <img src={N} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
-        <img src={O} alt="My SVG" width={100} height={100} style={{background: "#000"}} />
+        {/* <img src={O} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
+        <img src={P} alt="My SVG" width={100} height={100} style={{background: "#000"}} />
 
         {/* <img src={letters} alt="My SVG" width={500} height={500} /> */}
    </>
