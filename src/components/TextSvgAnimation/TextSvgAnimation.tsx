@@ -5,7 +5,8 @@ import React from 'react'
 // import D from '../../assets/alphabet/D.svg';
 // import E from '../../assets/alphabet/E.svg';
 // import F from '../../assets/alphabet/F.svg';
-import G from '../../assets/alphabet/G.svg';
+// import G from '../../assets/alphabet/G.svg';
+import H from '../../assets/alphabet/H.svg';
 // import letters from '../../assets/alphabet/letters.svg';
 
 export const TextSvgAnimation = () => {
@@ -17,7 +18,9 @@ export const TextSvgAnimation = () => {
         {/* <img src={D} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
         {/* <img src={E} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
         {/* <img src={F} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
-        <img src={G} alt="My SVG" width={100} height={100} style={{background: "#000"}} />
+        {/* <img src={G} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
+        <img src={H} alt="My SVG" width={100} height={100} style={{background: "#000"}} />
+
         {/* <img src={letters} alt="My SVG" width={500} height={500} /> */}
    </>
   )
