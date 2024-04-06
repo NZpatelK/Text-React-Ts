@@ -16,7 +16,8 @@ import A from '../../assets/alphabet/A.svg';
 // import O from '../../assets/alphabet/O.svg';
 // import P from '../../assets/alphabet/P.svg';
 // import Q from '../../assets/alphabet/Q.svg';
-import R from '../../assets/alphabet/R.svg';
+// import R from '../../assets/alphabet/R.svg';
+import S from '../../assets/alphabet/S.svg';
 
 import letters from '../../assets/alphabet/1letters.svg';
 
@@ -40,7 +41,8 @@ export const TextSvgAnimation = () => {
         {/* <img src={O} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
         {/* <img src={P} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
         {/* <img src={Q} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
-        <img src={R} alt="My SVG" width={100} height={100} style={{background: "#000"}} />
+        {/* <img src={R} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
+        <img src={S} alt="My SVG" width={100} height={100} style={{background: "#000"}} />
 
         {/* <img src={letters} alt="My SVG" width={500} height={500} /> */}
    </>
