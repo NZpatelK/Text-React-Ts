@@ -22,7 +22,8 @@ import React from 'react'
 // import U from '../../assets/alphabet/U.svg';
 // import V from '../../assets/alphabet/V.svg';
 // import W from '../../assets/alphabet/W.svg';
-import X from '../../assets/alphabet/X.svg';
+// import X from '../../assets/alphabet/X.svg';
+import Y from '../../assets/alphabet/Y.svg';
 
 import letters from '../../assets/alphabet/1letters.svg';
 
@@ -52,7 +53,8 @@ export const TextSvgAnimation = () => {
         {/* <img src={U} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
         {/* <img src={V} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
         {/* <img src={W} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
-        <img src={X} alt="My SVG" width={100} height={100} style={{background: "#000"}} />
+        {/* <img src={X} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
+        <img src={Y} alt="My SVG" width={100} height={100} style={{background: "#000"}} />
 
         {/* <img src={letters} alt="My SVG" width={500} height={500} /> */}
    </>
