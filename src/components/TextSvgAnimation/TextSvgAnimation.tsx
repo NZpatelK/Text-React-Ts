@@ -10,8 +10,9 @@ import React from 'react'
 // import I from '../../assets/alphabet/I.svg';
 // import J from '../../assets/alphabet/J.svg';
 // import K from '../../assets/alphabet/K.svg';
-import L from '../../assets/alphabet/L.svg';
-import letters from '../../assets/alphabet/letters.svg';
+// import L from '../../assets/alphabet/L.svg';
+import M from '../../assets/alphabet/M.svg';
+import letters from '../../assets/alphabet/1letters.svg';
 
 export const TextSvgAnimation = () => {
   return (
@@ -27,7 +28,8 @@ export const TextSvgAnimation = () => {
         {/* <img src={I} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
         {/* <img src={J} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
         {/* <img src={K} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
-        <img src={L} alt="My SVG" width={100} height={100} style={{background: "#000"}} />
+        {/* <img src={L} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
+        <img src={M} alt="My SVG" width={100} height={100} style={{background: "#000"}} />
 
         {/* <img src={letters} alt="My SVG" width={500} height={500} /> */}
    </>
