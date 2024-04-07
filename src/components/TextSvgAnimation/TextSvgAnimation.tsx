@@ -31,11 +31,13 @@ import React from 'react'
 import './TextSvgAnimation.css';
 import { Z } from './alphabet/Z';
 import { A } from './alphabet/A';
+import { B } from './alphabet/B';
 
 export const TextSvgAnimation = () => {
   return (
     <>
       <A />
+      <B />
       <Z />
 
 
