@@ -11,6 +11,7 @@
   stroke-dashoffset: 100; 
   stroke-width: 0.25;
   animation: dash 2s linear forwards;
+}
 
 @keyframes dash {
   from {
