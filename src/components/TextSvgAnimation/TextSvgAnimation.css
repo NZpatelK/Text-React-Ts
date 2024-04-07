@@ -16,10 +16,15 @@
 }
 
 @keyframes dash {
-  from {
-    fill: transparent;
+  0% {
+    fill-opacity: 0;
   }
-  to {
+
+  50% {
+    fill-opacity: 1;
+  }
+
+  100% {
     stroke-dashoffset: 0;
   }
 }

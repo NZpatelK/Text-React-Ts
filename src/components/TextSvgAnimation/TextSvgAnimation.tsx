@@ -32,12 +32,14 @@ import './TextSvgAnimation.css';
 import { Z } from './alphabet/Z';
 import { A } from './alphabet/A';
 import { B } from './alphabet/B';
+import { C } from './alphabet/C';
 
 export const TextSvgAnimation = () => {
   return (
     <>
       <A />
       <B />
+      <C />
       <Z />
 
 
