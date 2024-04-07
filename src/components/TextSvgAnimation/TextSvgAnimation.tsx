@@ -34,6 +34,7 @@ import { A } from './alphabet/A';
 import { B } from './alphabet/B';
 import { C } from './alphabet/C';
 import { D } from './alphabet/D';
+import { E } from './alphabet/E';
 
 export const TextSvgAnimation = () => {
   return (
@@ -42,6 +43,7 @@ export const TextSvgAnimation = () => {
       <B />
       <C />
       <D />
+      <E />
       <Z />
 
 
