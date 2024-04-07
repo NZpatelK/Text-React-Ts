@@ -10,7 +10,7 @@
   stroke-dasharray: 100; 
   stroke-dashoffset: 100; 
   stroke-width: 0.25;
-  animation: dash 2s linear forwards;
+  animation: dash 3s linear forwards;
 }
 
 @keyframes dash {

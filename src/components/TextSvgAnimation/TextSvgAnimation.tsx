@@ -30,11 +30,17 @@ import React from 'react'
 
 import './TextSvgAnimation.css';
 import { Z } from './alphabet/Z';
+import { A } from './alphabet/A';
 
 export const TextSvgAnimation = () => {
   return (
     <>
-    <Z/>
+      <A />
+      <Z />
+
+
+
+
       {/* <img src={A} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
       {/* <img src={B} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
       {/* <img src={C} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
@@ -61,7 +67,7 @@ export const TextSvgAnimation = () => {
       {/* <img src={X} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
       {/* <img src={Y} alt="My SVG" width={100} height={100} style={{background: "#000"}} /> */}
       {/* <div className='loading-page'><img src={Z} className='svg' alt="My SVG" width={"150px"} height={"150px"}/></div> */}
-   
+
       {/* <img src={letters} alt="My SVG" width={500} height={500} /> */}
     </>
   )
