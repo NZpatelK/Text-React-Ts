@@ -1,0 +1,23 @@
+#svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.dash-line {
+  stroke-dasharray: 100; 
+  stroke-dashoffset: 100; 
+  stroke-width: 0.25;
+  animation: dash 2s linear forwards;
+
+@keyframes dash {
+  from {
+    fill: transparent;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
