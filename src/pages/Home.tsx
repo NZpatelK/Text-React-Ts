@@ -32,11 +32,6 @@ const Home: React.FC = () => {
                     <p>Implementing a zoom in and out animation through scrolling with multiple words would add a cool and interesting effect."</p>
                     <Link className='Link' to="MultipleWordsZoom">Click Here</Link>
                 </div>
-                <div className='LinkItem' onClick={() => navigate("SlidesZoom")}>
-                    <h2>Zoom by Slide</h2>
-                    <p>slides</p>
-                    <Link className='Link' to="SlidesZoom">Click Here</Link>
-                </div>
                 <div className='LinkItem' onClick={() => navigate("OdometerNum")}>
                     <h2>Odometer</h2>
                     <p>slides</p>

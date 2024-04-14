@@ -21,7 +21,7 @@ function App() {
       <Route path="Text-React-Ts/ZoomBySwitch2" element={<ZoomBySwitch2 />} />
       <Route path="Text-React-Ts/LetterRotating" element={<LetterRotating />} />
       <Route path="Text-React-Ts/MultipleWordsZoom" element={<MutlipleWordsZoom />} />
-      <Route path='Text-React-Ts/SlidesZoom' element={<SlidesZoom/>} />
+      {/* <Route path='Text-React-Ts/SlidesZoom' element={<SlidesZoom/>} /> */}
       <Route path='Text-React-Ts/OdometerNum' element={<OdometerNumber/>} />
       <Route path='Text-React-Ts/TextSvgAnimation' element={<TextSvgAnimation/>} />
 
