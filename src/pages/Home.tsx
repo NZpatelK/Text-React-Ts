@@ -38,12 +38,12 @@ const Home: React.FC = () => {
                     <Link className='Link' to="SlidesZoom">Click Here</Link>
                 </div>
                 <div className='LinkItem' onClick={() => navigate("TextSvgAnimation")}>
-                    <h2>TextSvgAnimation</h2>
+                    <h2>Text Svg Animation</h2>
                     <p>slides</p>
                     <Link className='Link' to="SlidesZoom">Click Here</Link>
                 </div>
                 <div className='LinkItem' onClick={() => navigate("CalligraphyStrokeAnimation")}>
-                    <h2>CalligraphyStrokeAnimation</h2>
+                    <h2>Calligraphy Stroke Animation</h2>
                     <p>slides</p>
                     <Link className='Link' to="SlidesZoom">Click Here</Link>
                 </div>
