@@ -42,6 +42,11 @@ const Home: React.FC = () => {
                     <p>slides</p>
                     <Link className='Link' to="SlidesZoom">Click Here</Link>
                 </div>
+                <div className='LinkItem' onClick={() => navigate("CalligraphyStrokeAnimation")}>
+                    <h2>CalligraphyStrokeAnimation</h2>
+                    <p>slides</p>
+                    <Link className='Link' to="SlidesZoom">Click Here</Link>
+                </div>
             </div>
         </div>
     );
