@@ -1,0 +1,86 @@
+.StrokeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(135deg, rgba(103, 103, 103, 0.06) 0%, rgba(103, 103, 103, 0.06) 50%, rgba(117, 117, 117, 0.06) 50%, rgba(117, 117, 117, 0.06) 100%), linear-gradient(135deg, rgba(49, 49, 49, 0.06) 0%, rgba(49, 49, 49, 0.06) 50%, rgba(228, 228, 228, 0.06) 50%, rgba(228, 228, 228, 0.06) 100%), linear-gradient(90deg, hsl(201, 91%, 51%), hsl(201, 91%, 51%));
+    background-size: 17px 17px;
+}
+
+.StrokeContainer .title path {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 4;
+}
+
+.StrokeContainer .title path:nth-child(1) {
+    stroke-dasharray: 240;
+    stroke-dashoffset: 240;
+    animation: draw 1s linear forwards 2.7s;
+}
+
+.StrokeContainer .title path:nth-child(2) {
+    stroke-dasharray: 385;
+    stroke-dashoffset: 385;
+    animation: draw 1s linear forwards 2.4s;
+}
+
+.StrokeContainer .title path:nth-child(3) {
+    stroke-dasharray: 287;
+    stroke-dashoffset: 287;
+    animation: draw 1s linear forwards 2.1s;
+}
+
+.StrokeContainer .title path:nth-child(4) {
+    stroke-dasharray: 388;
+    stroke-dashoffset: 388;
+    animation: draw 1s linear forwards 1.8s;
+}
+
+.StrokeContainer .title path:nth-child(5) {
+    stroke-dasharray: 378;
+    stroke-dashoffset: 378;
+    animation: draw 1s linear forwards 1.5s;
+}
+
+.StrokeContainer .title path:nth-child(6) {
+    stroke-dasharray: 388;
+    stroke-dashoffset: 388;
+    animation: draw 1s linear forwards 1.2s;
+}
+
+.StrokeContainer .title path:nth-child(7) {
+    stroke-dasharray: 388;
+    stroke-dashoffset: 388;
+    animation: draw 1s linear forwards 0.9s;
+}
+
+.StrokeContainer .title path:nth-child(8) {
+    stroke-dasharray: 253;
+    stroke-dashoffset: 253;
+    animation: draw 1s linear forwards 0.6s;
+}
+
+.StrokeContainer .title path:nth-child(9) {
+    stroke-dasharray: 388;
+    stroke-dashoffset: 388;
+    animation: draw 1s linear forwards 0.3s;
+}   
+
+.StrokeContainer .title path:nth-child(10) {
+    stroke-dasharray: 488;
+    stroke-dashoffset: 488;
+    animation: draw 1s linear forwards 0s;
+}
+
+
+
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+

@@ -1,0 +1,86 @@
+.CalligraphyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(circle at 47% 98%, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 3%, transparent 3%, transparent 100%), radial-gradient(circle at 53% 90%, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 3%, transparent 3%, transparent 100%), radial-gradient(circle at 17% 34%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 3%, transparent 3%, transparent 100%), radial-gradient(circle at 85% 36%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 3%, transparent 3%, transparent 100%), radial-gradient(circle at 22% 21%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 7%, transparent 7%, transparent 100%), radial-gradient(circle at 99% 30%, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 7%, transparent 7%, transparent 100%), radial-gradient(circle at 82% 84%, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 7%, transparent 7%, transparent 100%), radial-gradient(circle at 62% 49%, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 7%, transparent 7%, transparent 100%), radial-gradient(circle at 85% 14%, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 7%, transparent 7%, transparent 100%), radial-gradient(circle at 89% 22%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 7%, transparent 7%, transparent 100%), radial-gradient(circle at 37% 65%, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 7%, transparent 7%, transparent 100%), radial-gradient(circle at 57% 27%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 7%, transparent 7%, transparent 100%), radial-gradient(circle at 95% 91%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 5%, transparent 5%, transparent 100%), radial-gradient(circle at 85% 34%, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 5%, transparent 5%, transparent 100%), radial-gradient(circle at 7% 65%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 5%, transparent 5%, transparent 100%), radial-gradient(circle at 69% 41%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 5%, transparent 5%, transparent 100%), radial-gradient(circle at 33% 2%, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 5%, transparent 5%, transparent 100%), radial-gradient(circle at 57% 84%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 5%, transparent 5%, transparent 100%), radial-gradient(circle at 80% 86%, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 5%, transparent 5%, transparent 100%), radial-gradient(circle at 24% 45%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 5%, transparent 5%, transparent 100%), linear-gradient(45deg, rgb(45, 149, 193), rgb(50, 50, 175));
+}
+
+#msg {
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+
+#msg path {
+    fill: transparent;
+    stroke-width: 5;
+    stroke: #ffffff;
+}
+
+#msg path:nth-child(1) {
+    stroke-dasharray: 486;
+    stroke-dashoffset: 486;
+    animation: draw 1s linear forwards 2.7s;
+}
+
+#msg path:nth-child(2) {
+    stroke-dasharray: 268;
+    stroke-dashoffset: 268;
+    animation: draw 1s linear forwards 2.4s;
+}
+
+#msg path:nth-child(3) {
+    stroke-dasharray: 329;
+    stroke-dashoffset: 329;
+    animation: draw 1s linear forwards 2.1s;
+}
+
+#msg path:nth-child(4) {
+    stroke-dasharray: 262;
+    stroke-dashoffset: 262;
+    animation: draw 1s linear forwards 1.8s;
+}
+
+#msg path:nth-child(5) {
+    stroke-dasharray: 1268;
+    stroke-dashoffset: 1268;
+    animation: draw 1s linear forwards 1.5s;
+}
+
+#msg path:nth-child(6) {
+    stroke-dasharray: 262;
+    stroke-dashoffset: 262;
+    animation: draw 1s linear forwards 1.2s;
+}
+
+#msg path:nth-child(7) {
+    stroke-dasharray: 268;
+    stroke-dashoffset: 268;
+    animation: draw 1s linear forwards 0.9s;
+}
+
+#msg path:nth-child(8) {
+    stroke-dasharray: 268;
+    stroke-dashoffset: 268;
+    animation: draw 1s linear forwards 0.6s;
+}
+
+#msg path:nth-child(9) {
+    stroke-dasharray: 331;
+    stroke-dashoffset: 331;
+    animation: draw 1s linear forwards 0.3s;
+}
+
+#msg path:nth-child(10) {
+    stroke-dasharray: 1162;
+    stroke-dashoffset: 1162;
+    animation: draw 1s linear forwards 0s;
+}
+
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
