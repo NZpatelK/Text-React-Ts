@@ -1,7 +1,19 @@
-import React from 'react'
+// import React, { useEffect } from 'react'
 import './CalligraphyStrokeAnimation.css' 
 
 export const CalligraphyStrokeAnimation = () => {
+
+//   useEffect(() => {
+//     const letter = document.querySelectorAll('.CalligraphyContainer #msg path');
+
+//     if (letter != null) {
+//         for (let i = 0; i < letter.length; i++) {
+//             console.log(`Letter ${i} is ${letter[i].getTotalLength()}`);
+//         }
+//     }
+
+// }, [])
+
   return (
     <div className='CalligraphyContainer'>
       <svg id="msg" width="709" height="128" viewBox="0 0 709 128" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -8,6 +8,7 @@ import MutlipleWordsZoom from './components/MultipleWordsZoom/MultipleWordsZoom'
 import { OdometerNumber } from './components/OdometerNumber/OdometerNumber';
 import { TextSvgAnimation } from './components/TextSvgAnimation/TextSvgAnimation';
 import { CalligraphyStrokeAnimation } from './components/CalligraphyStrokeAnimation/CalligraphyStrokeAnimation';
+import { StrokeSvgAnimation } from './components/StrokeSvgAnimation/StrokeSvgAnimation';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Route path='Text-React-Ts/OdometerNum' element={<OdometerNumber/>} />
       <Route path='Text-React-Ts/TextSvgAnimation' element={<TextSvgAnimation/>} />
       <Route path='Text-React-Ts/CalligraphyStrokeAnimation' element={<CalligraphyStrokeAnimation/>} />
+      <Route path='Text-React-Ts/StrokeSvgAnimation' element={<StrokeSvgAnimation/>} />
 
       <Route path='*' element={<h1>Not Found</h1>} />
     </Routes>
