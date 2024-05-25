@@ -39,8 +39,15 @@ import { F } from './alphabet/F';
 import { G } from './alphabet/G';
 import { H } from './alphabet/H';
 import { I } from './alphabet/I';
+import { J } from './alphabet/J';
+import { K } from './alphabet/K';
+import { L } from './alphabet/L';
+import M from './alphabet/M';
+import N from './alphabet/N';
+import { O } from './alphabet/O';
+import P from './alphabet/P';
 
-export const TextSvgAnimation = () => {
+export const TextSvgAnimation: React.FC = () => {
   return (
     <>
       <A />
@@ -52,6 +59,13 @@ export const TextSvgAnimation = () => {
       <G />
       <H />
       <I />
+      <J />
+      <K />
+      <L />
+      <M />
+      <N />
+      <O />
+      <P />
       <Z />
 
 
