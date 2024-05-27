@@ -48,6 +48,10 @@ import { O } from './alphabet/O';
 import P from './alphabet/P';
 import Q from './alphabet/Q';
 import R from './alphabet/R';
+import S from './alphabet/S';
+import T from './alphabet/T';
+import U from './alphabet/U';
+import V from './alphabet/V';
 
 export const TextSvgAnimation: React.FC = () => {
   return (
@@ -70,6 +74,10 @@ export const TextSvgAnimation: React.FC = () => {
       <P />
       <Q />
       <R />
+      <S />
+      <T />
+      <U />
+      <V />
       <Z />
 
 
