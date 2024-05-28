@@ -1,7 +1,7 @@
 import React from 'react'
 import '../TextSvgAnimation.css'
 
-export const C = () => {
+export const C: React.FC = () => {
         return (
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="500px"
                         height="500px" viewBox="100 25 100 100">
