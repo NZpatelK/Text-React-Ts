@@ -1,11 +1,14 @@
-.homepage{
+.homepage {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: repeating-linear-gradient(135deg, hsla(264, 0%, 88%, 0.03) 0px, hsla(264, 0%, 88%, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, hsla(264, 0%, 88%, 0.03) 0px, hsla(264, 0%, 88%, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, hsla(264, 0%, 88%, 0.03) 0px, hsla(264, 0%, 88%, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(135deg, hsla(264, 0%, 88%, 0.03) 0px, hsla(264, 0%, 88%, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, hsla(264, 0%, 88%, 0.03) 0px, hsla(264, 0%, 88%, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(112.5deg, hsla(264, 0%, 88%, 0.03) 0px, hsla(264, 0%, 88%, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(112.5deg, hsla(264, 0%, 88%, 0.03) 0px, hsla(264, 0%, 88%, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, hsla(264, 0%, 88%, 0.03) 0px, hsla(264, 0%, 88%, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(22.5deg, hsla(264, 0%, 88%, 0.03) 0px, hsla(264, 0%, 88%, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, hsla(264, 0%, 88%, 0.03) 0px, hsla(264, 0%, 88%, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(22.5deg, hsla(264, 0%, 88%, 0.03) 0px, hsla(264, 0%, 88%, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(135deg, hsla(264, 0%, 88%, 0.03) 0px, hsla(264, 0%, 88%, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(157.5deg, hsla(264, 0%, 88%, 0.03) 0px, hsla(264, 0%, 88%, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, hsla(264, 0%, 88%, 0.03) 0px, hsla(264, 0%, 88%, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, hsla(264, 0%, 88%, 0.03) 0px, hsla(264, 0%, 88%, 0.03) 1px, transparent 1px, transparent 12px), linear-gradient(90deg, rgb(151, 26, 210), rgb(57, 199, 205));
 }
 
-.LinkContainer{
+.LinkContainer {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -13,56 +16,46 @@
     margin: 20px;
     padding: 20px;
     border-radius: 5px;
-
+    width: 90%;
 
 }
 
-.LinkItem{ 
+.LinkItem {
     position: relative;
     display: flex;
     justify-content: start;
-    align-items:start;
+    align-items: start;
     flex-direction: column;
     margin: 10px;
-    width: 300px;
-    height: 250px;
     border-radius: 5px;
     text-decoration: none;
-    background-color: #ffffff;
+    border: #ffffff 2px solid;
     transition: 0.3s;
 }
 
-.LinkItem h2{ 
-    margin: 10px 10px 5px 10px;
-    padding: 0 10px;
+.LinkItem h2 {
+    /* margin: 10px 10px 5px 10px; */
+    text-transform: capitalize;
+    padding: 0 20px;
     font-size: 20px;
     font-weight: bold;
-    color: #000;
+    color: #fff;
 }
 
-.LinkItem p{ 
-    margin: 0 10px;
-    padding: 0 10px;
-    font-size: 16px;
-    text-align: justify;
-    color: #000;
-}
 
-.LinkItem .Link{
-    margin: 15px 20px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
 
-.LinkItem:hover{ 
+.LinkItem:hover {
     transform: scale(1.05);
+    background: #ffffff;
     transition: 0.3s;
 }
 
+.LinkItem:hover h2 {
+    color: #000;
+}
 
-@media screen and (max-width: 950px){
-    .LinkContainer{
+@media screen and (max-width: 950px) {
+    .LinkContainer {
         justify-content: center;
     }
 }

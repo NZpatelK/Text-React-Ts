@@ -55,7 +55,7 @@ const LetterRotating: React.FC = () => {
   }, []);
 
   return (
-    <div>
+    <div className="letter-rotating-container">
       <div><Link to='/Text-React-Ts/'> <img className='backBtn' src={backButton} alt="" /> </Link></div>
       <div className="role-rotating-text">
         <h3 className="role-name">I am a </h3>

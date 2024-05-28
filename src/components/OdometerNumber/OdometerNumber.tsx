@@ -35,7 +35,7 @@ export const OdometerNumber = () => {
                     <Odometer value={values[index]} format="d" style={{ fontSize: "10em", cursor: 'pointer' }} theme={listTheme[index]} />
                     <div className="inputContainer" >
                         <h3>Input your new value to update Odometer</h3>
-                        <input className="num-input" maxLength={4} type="number" onChange={(e) => updateValue(index, parseInt(e.target.value))} />
+                        <input className="num-input" maxLength={4} onChange={(e) => updateValue(index, parseInt(e.target.value))} />
                     </div>
                 </div>
 
