@@ -1,6 +1,6 @@
 import React from 'react';
 
-const X: React.FC = () => {
+export const X: React.FC = () => {
     return (
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="500px"
             height="500px" viewBox="130 255 100 100">
@@ -167,5 +167,3 @@ const X: React.FC = () => {
         </svg>
     );
 };
-
-export default X;

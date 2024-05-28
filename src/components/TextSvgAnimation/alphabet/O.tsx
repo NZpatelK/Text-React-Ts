@@ -2,7 +2,6 @@ import React from 'react';
 
 export const O: React.FC = () => {
     return (
-        <>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="500px"
                 height="500px" viewBox="280 100 100 100">
 
@@ -164,6 +163,5 @@ export const O: React.FC = () => {
                 </g>
 
             </svg>
-        </>
     );
 };
