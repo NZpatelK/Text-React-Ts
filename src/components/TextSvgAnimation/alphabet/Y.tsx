@@ -140,4 +140,3 @@ export const Y: React.FC = () => {
     );
 };
 
-export default Y;
